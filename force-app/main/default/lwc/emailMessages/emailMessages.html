@@ -1,0 +1,13 @@
+<template>
+  <lightning-card  title="Emails Sent">
+    <lightning-datatable
+            key-field="Id"
+            max-row-selection="1"
+            data={emailsSent}
+            columns={emailsSentColumns}
+            is-loading={emailListLoading}
+            onrowselection={handleEmailSelected}>
+    </lightning-datatable>
+    <p slot="footer">Select an email to see the details.</p>
+  </lightning-card>
+</template>

@@ -1,0 +1,22 @@
+<template>
+  <lightning-card title="Email Details">
+    <div if:true={messageId}>
+      <div class="slds-m-around_medium">
+        <p>Message Date: {messageDate}</p>
+        <p>From: {fromAddress}</p>
+        <p>To: {toAddress}</p>
+        <p>CC: {ccAddress}</p>
+        <p>Subject: {messageSubject}</p>
+        <div if:true={messagebody}>
+          <p>Body: {messagebody}</p>
+        </div>
+        <div if:true={messageRichBody}>
+          <p>{messageRichBody}</p>
+        </div>
+      </div>
+    </div>
+    <div if:false={messageId}>
+      <p>No message selected yet.</p>
+    </div>
+  </lightning-card>
+</template>
