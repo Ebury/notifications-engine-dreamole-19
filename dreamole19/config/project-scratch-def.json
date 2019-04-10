@@ -1,0 +1,15 @@
+{
+  "orgName": "Notifications Service",
+  "edition": "Developer",
+  "orgPreferences" : {
+    "enabled": [
+      "EnhancedEmailEnabled"
+    ]
+  },
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}
